@@ -1,0 +1,79 @@
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="main-container">
+    <div class="smaller-container">
+      <!-- player health -->
+      <div class="backfield1-bar">
+        <div style="background-color: red; height: 30px; width: 100%"></div>
+        <div id="player-health" class="player1-health-bar"></div>
+      </div>
+      <!-- timer -->
+      <div id="timer" class="timer">10</div>
+      <!-- second player health -->
+      <div class="backfield2-bar">
+        <div style="background-color: red; height: 30px; width: 100%"></div>
+        <div id="enemy-health" class="player2-health-bar"></div>
+      </div>
+    </div>
+    <div>
+      <h1
+        id="display-text"
+        style="
+          display: none;
+          position: absolute;
+          color: white;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 400;
+        "
+      >
+        TIE
+      </h1>
+      <p
+        id="restart-text"
+        style="
+          display: none;
+          position: absolute;
+          color: white;
+          align-items: center;
+          justify-content: center;
+          top: 80;
+          right: 0;
+          left: 0;
+          bottom: 400;
+        "
+      >
+        Press key 'e' for restart!
+      </p>
+    </div>
+    <canvas
+      style="
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    ></canvas>
+  </div>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="index.js"></script>
+</body>
